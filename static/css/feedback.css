@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(247, 189, 65);
+    overflow-x:hidden;
+
+}
+.div1{
+    height: 300px;
+     width:100vw;
+     background-color:white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+textarea{
+    text-align:center;
+}
+
+@media only screen and (max-width:768px) {
+    .div1{
+        height: 300px;
+        width:80vw;
+    }
+    textarea{
+        text-align:center;
+        height: 100%;
+        width: 100%;
+    }
+}

@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/css/order.css' %}">
+</head>
+<body>
+
+    <div class="div1">
+        <img src="{{items.image.url}}" alt="">
+        <div class="div11">
+            <h4>{{items.name}}</h4>
+            <h4>Price:{{items.price}}</h4>
+        </div>
+    </div>
+    <div class="div2">
+        <form action="" method="post">
+            {% csrf_token %}
+            <input type="text" value="{{items.name}}" name="name"><br>
+            <input type="text" placeholder="place" name="place"><br>
+            <input type="number" placeholder="phone number" name="ph_number"><bR>
+            <input type="number" placeholder="quantity" name="qty"><br>
+            <input type="submit" value="Buy Now!">
+        </form>
+    </div>
+</body>
+</html>

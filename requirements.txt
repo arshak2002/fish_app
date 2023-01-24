@@ -1,0 +1,15 @@
+appdirs==1.4.4
+asgiref==3.6.0
+backports.zoneinfo==0.2.1
+colorama==0.4.4
+distlib==0.3.1
+Django==4.1.5
+filelock==3.0.12
+path==16.6.0
+Pillow==9.4.0
+qrcode==7.3.1
+six==1.15.0
+sqlparse==0.4.3
+tzdata==2022.7
+virtualenv==20.0.31
+virtualenvwrapper-win==1.2.6
